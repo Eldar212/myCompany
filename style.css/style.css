@@ -331,20 +331,18 @@ margin-top: 15px;
   margin-top: 58px;
 }
 
-.inputs-wrapper{
-  display: grid;
-  grid-row-gap: 53px;
-  grid-column-gap: 38px;
-  justify-content: center;
-  grid-template-columns: 360px 360px;
-}
-
 .contacts {
   height: 830px;
 }
 .contacts form {
   width: max-content;
   margin: 0 auto;
+
+  display: grid;
+  grid-row-gap: 53px;
+  grid-column-gap: 38px;
+  justify-content: center;
+  grid-template-columns: 360px 360px;
 }
 
 .contacts input{
@@ -367,22 +365,23 @@ margin-top: 15px;
   border: none;
   color: #fff;
   font-weight: 600;
-  float: right;
-  margin-top: 30px;
-  margin-bottom: 100px;
+  margin-left: auto;
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
 
-.input-area-wrapper {
+.form-input-wrapper {
   display: grid;
 }
 
-.input-area-wrapper span {
+.form-input-wrapper span {
   font-size: 14px;
   margin-bottom: 12px;
   color: #6c6c6c;
 }
 
-.input-area-wrapper span::after {
+.form-input-wrapper span::after {
   content: '*';
   color: red;
   font-size: 14px;
